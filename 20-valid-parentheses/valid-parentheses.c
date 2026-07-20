@@ -19,7 +19,7 @@ bool isValid(char* s)
           else {
             if (top == -1)
             {
-                free(stack);
+             //   free(stack);
                 return false;
             }
             char open = stack[top--];
