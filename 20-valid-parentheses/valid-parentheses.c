@@ -23,12 +23,10 @@ bool isValid(char* s)
             }
             char open = stack[top--];
             if ((ch==')' && open !='(')  || (ch==']' && open!= '[')  || (ch=='}' && open !='{')){
-             //   free(stack);
                 return false;
             }
         }
     }
     bool ans = (top == -1);
-    free(stack);
     return ans;
 }
