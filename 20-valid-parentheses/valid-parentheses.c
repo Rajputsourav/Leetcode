@@ -19,12 +19,11 @@ bool isValid(char* s)
           else {
             if (top == -1)
             {
-             //   free(stack);
                 return false;
             }
             char open = stack[top--];
             if ((ch==')' && open !='(')  || (ch==']' && open!= '[')  || (ch=='}' && open !='{')){
-                free(stack);
+             //   free(stack);
                 return false;
             }
         }
