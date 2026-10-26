@@ -14,7 +14,6 @@ public:
                 currentWidth += width;
             }
         }
-
         return {lines, currentWidth};
     }
 };
